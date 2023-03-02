@@ -23,11 +23,11 @@ notes.forEach((note) => {
 });
 
 nextButton.addEventListener("click", () => {
-  if (nextButton.classList.contains("active") & !activeNote) {
+  if (nextButton.classList.contains("active") && !activeNote) {
     alert("Error");
     nextButton.classList.remove("active");
   }
-  if (nextButton.classList.contains("active") & activeNote) {
+  if (nextButton.classList.contains("active") && activeNote) {
     alert(`Dziękujemy, że oceniłeś produkt na ${activeNote}`);
     nextButton.classList.remove("active");
     notes.forEach((note) => note.classList.remove("selected"));
