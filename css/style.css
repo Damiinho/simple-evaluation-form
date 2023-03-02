@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f1f8;
+}
+body div.window.hidden {
+  visibility: hidden;
+}
+body div.window {
+  position: absolute;
+  width: 343px;
+  height: 314px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body div.window div.window__star {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 16px;
+  top: 16px;
+  background: #f0f1f8;
+  border-radius: 370px;
+}
+body div.window div.window__star img {
+  width: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body div.window div.window__exit {
+  cursor: pointer;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 12px;
+  top: 12px;
+}
+body div.window div.window__exit img {
+  width: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body div.window div.window-title {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 16px;
+  top: 66px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #0d1016;
+}
+body div.window div.window-note-component {
+  position: absolute;
+  height: 88px;
+  width: 311px;
+  top: 130px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+body div.window div.window-note-component div.window-note-component__buttons {
+  display: flex;
+  gap: 8px;
+}
+body div.window div.window-note-component div.window-note-component__buttons button {
+  cursor: pointer;
+  width: 56px;
+  height: 48px;
+  background: #fcfcff;
+  border: 1px solid #dadfe9;
+  border-radius: 12px;
+  font-size: 18px;
+}
+body div.window div.window-note-component div.window-note-component__buttons button:hover {
+  background: #eeefff;
+}
+body div.window div.window-note-component div.window-note-component__buttons button.selected {
+  background: #293ce2;
+  color: #ffffff;
+}
+body div.window div.window-note-component div.window-note-component__description {
+  display: flex;
+  justify-content: space-between;
+}
+body div.window div.window-note-component div.window-note-component__description div {
+  position: absolute;
+  width: 90px;
+  height: 28px;
+}
+body div.window div.window-note-component div.window-note-component__description div p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #aeb5c3;
+}
+body div.window div.window-note-component div.window-note-component__description div.window-note-component__dissatisfied {
+  bottom: 0;
+  left: 0;
+}
+body div.window div.window-note-component div.window-note-component__description div.window-button-component__satisfied {
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+body div.window button.window-next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 311px;
+  height: 48px;
+  left: 16px;
+  bottom: 24px;
+  background: #f0f1f8;
+  border-radius: 12px;
+  font-size: 14px;
+}
+body div.window button.window-next-button p {
+  color: white;
+}
+body div.window button.window-next-button.active {
+  background: #293ce2;
+  cursor: pointer;
+}
+body div.window button.window-next-button.active:hover {
+  background: #4759f4;
+}
+body div.window button.window-next-button.active:active {
+  background: #293ce2;
+}
+
+@media only screen and (min-width: 480px) {
+  body div.window {
+    width: 372px;
+    height: 322px;
+  }
+  body div.window div.window-title {
+    left: 24px;
+    width: 265px;
+  }
+  body div.window div.window-note-component {
+    height: 88px;
+    width: 324px;
+    top: 138px;
+    left: 24px;
+  }
+  body div.window div.window-note-component div.window-note-component__buttons {
+    gap: 6px;
+  }
+  body div.window div.window-note-component div.window-note-component__buttons button {
+    width: 60px;
+  }
+  body div.window button.window-next-button {
+    left: 24px;
+    width: 324px;
+  }
+}/*# sourceMappingURL=style.css.map */
