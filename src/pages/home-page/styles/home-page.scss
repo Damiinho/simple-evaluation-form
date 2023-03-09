@@ -41,7 +41,7 @@ div.window {
       transform: translate(-50%, -50%);
     }
   }
-  div.window__exit {
+  & &__exit {
     cursor: pointer;
     position: absolute;
     width: 32px;
@@ -58,7 +58,7 @@ div.window {
     }
   }
 
-  div.window-title {
+  & &__title {
     position: absolute;
     width: 200px;
     height: 40px;
@@ -74,7 +74,7 @@ div.window {
     letter-spacing: -0.03em;
     color: #0d1016;
   }
-  div.window-note-component {
+  & &-note-component {
     position: absolute;
     height: 88px;
     width: 311px;
@@ -181,7 +181,7 @@ div.window {
       width: 372px;
       height: 322px;
 
-      div.window-title {
+      div.window__title {
         left: 24px;
         width: 265px;
       }

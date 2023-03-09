@@ -57,7 +57,7 @@ div.window div.window__exit img {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-div.window div.window-title {
+div.window div.window__title {
   position: absolute;
   width: 200px;
   height: 40px;
@@ -174,7 +174,7 @@ div.window button.window-next-button.active:active {
     width: 372px;
     height: 322px;
   }
-  body div.window div.window-title {
+  body div.window div.window__title {
     left: 24px;
     width: 265px;
   }
