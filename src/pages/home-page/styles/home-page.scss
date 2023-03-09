@@ -82,7 +82,7 @@ div.window {
     left: 16px;
     display: flex;
     flex-direction: column;
-    div.window-note-component__buttons {
+    &__buttons {
       display: flex;
       gap: 8px;
 
@@ -109,7 +109,7 @@ div.window {
         color: #ffffff;
       }
     }
-    div.window-note-component__description {
+    &__description {
       display: flex;
       justify-content: space-between;
 

@@ -82,11 +82,11 @@ div.window div.window-note-component {
   display: flex;
   flex-direction: column;
 }
-div.window div.window-note-component div.window-note-component__buttons {
+div.window div.window-note-component__buttons {
   display: flex;
   gap: 8px;
 }
-div.window div.window-note-component div.window-note-component__buttons button {
+div.window div.window-note-component__buttons button {
   cursor: pointer;
   width: 56px;
   height: 48px;
@@ -100,23 +100,23 @@ div.window div.window-note-component div.window-note-component__buttons button {
   line-height: 100%;
   letter-spacing: -0.03em;
 }
-div.window div.window-note-component div.window-note-component__buttons button:hover {
+div.window div.window-note-component__buttons button:hover {
   background: #eeefff;
 }
-div.window div.window-note-component div.window-note-component__buttons button.selected {
+div.window div.window-note-component__buttons button.selected {
   background: #293ce2;
   color: #ffffff;
 }
-div.window div.window-note-component div.window-note-component__description {
+div.window div.window-note-component__description {
   display: flex;
   justify-content: space-between;
 }
-div.window div.window-note-component div.window-note-component__description div {
+div.window div.window-note-component__description div {
   position: absolute;
   width: 90px;
   height: 28px;
 }
-div.window div.window-note-component div.window-note-component__description div p {
+div.window div.window-note-component__description div p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -127,11 +127,11 @@ div.window div.window-note-component div.window-note-component__description div 
   letter-spacing: -0.02em;
   color: #aeb5c3;
 }
-div.window div.window-note-component div.window-note-component__description div.window-note-component__dissatisfied {
+div.window div.window-note-component__description div.window-note-component__dissatisfied {
   bottom: 0;
   left: 0;
 }
-div.window div.window-note-component div.window-note-component__description div.window-button-component__satisfied {
+div.window div.window-note-component__description div.window-button-component__satisfied {
   bottom: 0;
   right: 0;
   text-align: right;
