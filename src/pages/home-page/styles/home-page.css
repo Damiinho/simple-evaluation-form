@@ -12,11 +12,11 @@ button {
 body {
   background-color: #f0f1f8;
 }
-body div.window.hidden {
+body .window.hidden {
   visibility: hidden;
 }
 
-div.window {
+.window {
   position: absolute;
   width: 343px;
   height: 314px;
@@ -26,7 +26,7 @@ div.window {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-div.window__star {
+.window__star {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -35,14 +35,14 @@ div.window__star {
   background: #f0f1f8;
   border-radius: 370px;
 }
-div.window__star img {
+.window__star img {
   width: 16px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-div.window div.window__exit {
+.window .window__exit {
   cursor: pointer;
   position: absolute;
   width: 32px;
@@ -50,14 +50,14 @@ div.window div.window__exit {
   right: 12px;
   top: 12px;
 }
-div.window div.window__exit img {
+.window .window__exit img {
   width: 32px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-div.window div.window__title {
+.window .window__title {
   position: absolute;
   width: 200px;
   height: 40px;
@@ -73,7 +73,40 @@ div.window div.window__title {
   letter-spacing: -0.03em;
   color: #0d1016;
 }
-div.window div.window-note-component {
+.window-next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 311px;
+  height: 48px;
+  left: 16px;
+  bottom: 24px;
+  background: #f0f1f8;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.window-next-button p {
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+}
+.window-next-button.active {
+  background: #293ce2;
+  cursor: pointer;
+}
+.window-next-button.active:hover {
+  background: #4759f4;
+}
+.window-next-button.active:active {
+  background: #293ce2;
+}
+
+.window-note-component {
   position: absolute;
   height: 88px;
   width: 311px;
@@ -82,11 +115,11 @@ div.window div.window-note-component {
   display: flex;
   flex-direction: column;
 }
-div.window div.window-note-component__buttons {
+.window-note-component__buttons {
   display: flex;
   gap: 8px;
 }
-div.window div.window-note-component__buttons button {
+.window-note-component__buttons button {
   cursor: pointer;
   width: 56px;
   height: 48px;
@@ -100,23 +133,23 @@ div.window div.window-note-component__buttons button {
   line-height: 100%;
   letter-spacing: -0.03em;
 }
-div.window div.window-note-component__buttons button:hover {
+.window-note-component__buttons button:hover {
   background: #eeefff;
 }
-div.window div.window-note-component__buttons button.selected {
+.window-note-component__buttons button.selected {
   background: #293ce2;
   color: #ffffff;
 }
-div.window div.window-note-component__description {
+.window-note-component__description {
   display: flex;
   justify-content: space-between;
 }
-div.window div.window-note-component__description div {
+.window-note-component__description div {
   position: absolute;
   width: 90px;
   height: 28px;
 }
-div.window div.window-note-component__description div p {
+.window-note-component__description div p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -127,46 +160,14 @@ div.window div.window-note-component__description div p {
   letter-spacing: -0.02em;
   color: #aeb5c3;
 }
-div.window div.window-note-component__description-dissatisfied {
+.window-note-component__description-dissatisfied {
   bottom: 0;
   left: 0;
 }
-div.window div.window-note-component__description-satisfied {
+.window-note-component__description-satisfied {
   bottom: 0;
   right: 0;
   text-align: right;
-}
-div.window button.window-next-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 311px;
-  height: 48px;
-  left: 16px;
-  bottom: 24px;
-  background: #f0f1f8;
-  border-radius: 12px;
-  font-size: 14px;
-}
-div.window button.window-next-button p {
-  color: white;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: -0.03em;
-}
-div.window button.window-next-button.active {
-  background: #293ce2;
-  cursor: pointer;
-}
-div.window button.window-next-button.active:hover {
-  background: #4759f4;
-}
-div.window button.window-next-button.active:active {
-  background: #293ce2;
 }
 
 @media only screen and (min-width: 480px) {

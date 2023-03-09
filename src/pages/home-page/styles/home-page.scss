@@ -10,12 +10,12 @@ button {
 
 body {
   background-color: #f0f1f8;
-  div.window.hidden {
+  .window.hidden {
     visibility: hidden;
   }
 }
 
-div.window {
+.window {
   position: absolute;
   width: 343px;
   height: 314px;
@@ -74,105 +74,106 @@ div.window {
     letter-spacing: -0.03em;
     color: #0d1016;
   }
-  & &-note-component {
-    position: absolute;
-    height: 88px;
-    width: 311px;
-    top: 130px;
-    left: 16px;
+}
+
+.window-note-component {
+  position: absolute;
+  height: 88px;
+  width: 311px;
+  top: 130px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  &__buttons {
     display: flex;
-    flex-direction: column;
-    &__buttons {
-      display: flex;
-      gap: 8px;
+    gap: 8px;
 
-      button {
-        cursor: pointer;
-        width: 56px;
-        height: 48px;
+    button {
+      cursor: pointer;
+      width: 56px;
+      height: 48px;
 
-        background: #fcfcff;
-        border: 1px solid #dadfe9;
-        border-radius: 12px;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 100%;
-        letter-spacing: -0.03em;
-      }
-      button:hover {
-        background: #eeefff;
-      }
-      button.selected {
-        background: #293ce2;
-        color: #ffffff;
-      }
-    }
-    &__description {
-      display: flex;
-      justify-content: space-between;
-
-      div {
-        position: absolute;
-        width: 90px;
-        height: 28px;
-        p {
-          font-family: "Montserrat";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 120%;
-          display: flex;
-          align-items: center;
-          letter-spacing: -0.02em;
-          color: #aeb5c3;
-        }
-      }
-      &-dissatisfied {
-        bottom: 0;
-        left: 0;
-      }
-      &-satisfied {
-        bottom: 0;
-        right: 0;
-        text-align: right;
-      }
-    }
-  }
-
-  button.window-next-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 311px;
-    height: 48px;
-    left: 16px;
-    bottom: 24px;
-    background: #f0f1f8;
-    border-radius: 12px;
-    font-size: 14px;
-    p {
-      color: white;
+      background: #fcfcff;
+      border: 1px solid #dadfe9;
+      border-radius: 12px;
       font-family: "Montserrat";
       font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
+      font-weight: 500;
+      font-size: 18px;
       line-height: 100%;
       letter-spacing: -0.03em;
     }
+    button:hover {
+      background: #eeefff;
+    }
+    button.selected {
+      background: #293ce2;
+      color: #ffffff;
+    }
   }
-  button.window-next-button.active {
-    background: #293ce2;
-    cursor: pointer;
+  &__description {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      position: absolute;
+      width: 90px;
+      height: 28px;
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #aeb5c3;
+      }
+    }
+    &-dissatisfied {
+      bottom: 0;
+      left: 0;
+    }
+    &-satisfied {
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
   }
-  button.window-next-button.active:hover {
-    background: #4759f4;
+}
+
+&-next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 311px;
+  height: 48px;
+  left: 16px;
+  bottom: 24px;
+  background: #f0f1f8;
+  border-radius: 12px;
+  font-size: 14px;
+  p {
+    color: white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
   }
-  button.window-next-button.active:active {
-    background: #293ce2;
-  }
+}
+&-next-button.active {
+  background: #293ce2;
+  cursor: pointer;
+}
+&-next-button.active:hover {
+  background: #4759f4;
+}
+&-next-button.active:active {
+  background: #293ce2;
 }
 
 @media only screen and (min-width: 480px) {
