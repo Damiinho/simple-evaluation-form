@@ -127,11 +127,11 @@ div.window div.window-note-component__description div p {
   letter-spacing: -0.02em;
   color: #aeb5c3;
 }
-div.window div.window-note-component__description div.window-note-component__dissatisfied {
+div.window div.window-note-component__description div.window-note-component__description-dissatisfied {
   bottom: 0;
   left: 0;
 }
-div.window div.window-note-component__description div.window-button-component__satisfied {
+div.window div.window-note-component__description div.window-button-component__description-satisfied {
   bottom: 0;
   right: 0;
   text-align: right;
