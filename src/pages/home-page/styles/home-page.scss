@@ -102,15 +102,6 @@ body {
   display: flex;
   flex-direction: column;
 
-  @media #{$phone} {
-    left: 16px;
-    // &__buttons {
-    //   gap: 8px;
-    //   button {
-    //     width: 56px;
-    //   }
-    // }
-  }
   &__buttons {
     display: flex;
     gap: 6px;
@@ -134,12 +125,6 @@ body {
     button.selected {
       background: #293ce2;
       color: #ffffff;
-    }
-    @media #{$phone} {
-      gap: 8px;
-      button {
-        width: 56px;
-      }
     }
   }
   &__description {
@@ -173,6 +158,23 @@ body {
       text-align: right;
     }
   }
+
+  @media #{$phone} {
+    top: 130px;
+    left: 16px;
+    width: 312px;
+    &__buttons {
+      gap: 8px;
+      button {
+        width: 56px;
+      }
+    }
+    &__description {
+      div {
+        height: 26px;
+      }
+    }
+  }
 }
 
 .window-next-button {
@@ -194,6 +196,10 @@ body {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -0.03em;
+  @media #{$phone} {
+    left: 16px;
+    width: 311px;
+  }
 }
 .window-next-button.active {
   background: #293ce2;
