@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "fonts.css";
+@import "normalize.css";
+@import "root.css";
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +20,8 @@ body .window.hidden {
 
 .window {
   position: absolute;
-  width: 343px;
-  height: 314px;
+  width: 372px;
+  height: 322px;
   background-color: #ffffff;
   border-radius: 18px;
   left: 50%;
@@ -59,7 +61,7 @@ body .window.hidden {
 }
 .window .window__title {
   position: absolute;
-  width: 200px;
+  width: 265px;
   height: 40px;
   left: 24px;
   top: 74px;
@@ -73,23 +75,43 @@ body .window.hidden {
   letter-spacing: -0.03em;
   color: #0d1016;
 }
+@media screen and (max-width: 580px) {
+  .window {
+    width: 343px;
+    height: 314px;
+  }
+  .window__star {
+    left: 16px;
+    top: 16px;
+  }
+  .window .window__title {
+    width: 200px;
+    left: 16px;
+    top: 66px;
+  }
+}
 
 .window-note-component {
   position: absolute;
   height: 88px;
-  width: 311px;
-  top: 130px;
-  left: 16px;
+  width: 324px;
+  top: 138px;
+  left: 24px;
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 580px) {
+  .window-note-component {
+    left: 16px;
+  }
+}
 .window-note-component__buttons {
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 .window-note-component__buttons button {
   cursor: pointer;
-  width: 56px;
+  width: 60px;
   height: 48px;
   background: #fcfcff;
   border: 1px solid #dadfe9;
@@ -108,6 +130,14 @@ body .window.hidden {
   background: #293ce2;
   color: #ffffff;
 }
+@media screen and (max-width: 580px) {
+  .window-note-component__buttons {
+    gap: 8px;
+  }
+  .window-note-component__buttons button {
+    width: 56px;
+  }
+}
 .window-note-component__description {
   display: flex;
   justify-content: space-between;
@@ -115,9 +145,7 @@ body .window.hidden {
 .window-note-component__description div {
   position: absolute;
   width: 90px;
-  height: 28px;
-}
-.window-note-component__description div p {
+  height: 27px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -127,6 +155,9 @@ body .window.hidden {
   align-items: center;
   letter-spacing: -0.02em;
   color: #aeb5c3;
+}
+.window-note-component__description div p::first-line {
+  letter-spacing: -0.03em;
 }
 .window-note-component__description-dissatisfied {
   bottom: 0;
@@ -143,15 +174,13 @@ body .window.hidden {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 311px;
   height: 48px;
-  left: 16px;
+  left: 24px;
+  width: 324px;
   bottom: 24px;
   background: #f0f1f8;
   border-radius: 12px;
   font-size: 14px;
-}
-.window-next-button p {
   color: white;
   font-family: "Montserrat";
   font-style: normal;
@@ -172,31 +201,4 @@ body .window.hidden {
 
 .window-next-button.active:active {
   background: #293ce2;
-}
-
-@media only screen and (min-width: 480px) {
-  body div.window {
-    width: 372px;
-    height: 322px;
-  }
-  body div.window div.window__title {
-    left: 24px;
-    width: 265px;
-  }
-  body div.window div.window-note-component {
-    height: 88px;
-    width: 324px;
-    top: 138px;
-    left: 24px;
-  }
-  body div.window div.window-note-component div.window-note-component__buttons {
-    gap: 6px;
-  }
-  body div.window div.window-note-component div.window-note-component__buttons button {
-    width: 60px;
-  }
-  body div.window button.window-next-button {
-    left: 24px;
-    width: 324px;
-  }
 }/*# sourceMappingURL=home-page.css.map */
