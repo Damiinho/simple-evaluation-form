@@ -1,6 +1,4 @@
-@import "fonts.css";
-@import "normalize.css";
-@import "root.css";
+@import "style.css";
 * {
   margin: 0;
   padding: 0;
@@ -90,6 +88,16 @@ body .window.hidden {
     top: 66px;
   }
 }
+@media screen and (max-width: 360px) {
+  .window {
+    width: 275px;
+    height: 314px;
+  }
+  .window .window__title {
+    width: 250px;
+    left: 20px;
+  }
+}
 
 .window-note-component {
   position: absolute;
@@ -124,6 +132,7 @@ body .window.hidden {
 .window-note-component__buttons button.selected {
   background: #293ce2;
   color: #ffffff;
+  transition: 0.3s;
 }
 .window-note-component__description {
   display: flex;
@@ -171,6 +180,18 @@ body .window.hidden {
     height: 26px;
   }
 }
+@media screen and (max-width: 360px) {
+  .window-note-component {
+    width: 235px;
+    left: 20px;
+  }
+  .window-note-component__buttons {
+    gap: 5px;
+  }
+  .window-note-component__buttons button {
+    width: 43px;
+  }
+}
 
 .window-next-button {
   display: flex;
@@ -198,10 +219,17 @@ body .window.hidden {
     width: 311px;
   }
 }
+@media screen and (max-width: 360px) {
+  .window-next-button {
+    left: 20px;
+    width: 234px;
+  }
+}
 
 .window-next-button.active {
   background: #293ce2;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .window-next-button.active:hover {

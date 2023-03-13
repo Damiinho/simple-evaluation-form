@@ -1,8 +1,7 @@
-@import "fonts.css";
-@import "normalize.css";
-@import "root.css";
+@import "style.css";
 
 $phone: "screen and (max-width: 580px)";
+$slimPhone: "screen and (max-width: 360px)";
 
 * {
   margin: 0;
@@ -91,6 +90,14 @@ body {
       top: 66px;
     }
   }
+  @media #{$slimPhone} {
+    width: 275px;
+    height: 314px;
+    & &__title {
+      width: 250px;
+      left: 20px;
+    }
+  }
 }
 
 .window-note-component {
@@ -125,6 +132,7 @@ body {
     button.selected {
       background: #293ce2;
       color: #ffffff;
+      transition: 0.3s;
     }
   }
   &__description {
@@ -175,6 +183,16 @@ body {
       }
     }
   }
+  @media #{$slimPhone} {
+    width: 235px;
+    left: 20px;
+    &__buttons {
+      gap: 5px;
+      button {
+        width: 43px;
+      }
+    }
+  }
 }
 
 .window-next-button {
@@ -200,10 +218,15 @@ body {
     left: 16px;
     width: 311px;
   }
+  @media #{$slimPhone} {
+    left: 20px;
+    width: 234px;
+  }
 }
 .window-next-button.active {
   background: #293ce2;
   cursor: pointer;
+  transition: 0.3s;
 }
 .window-next-button.active:hover {
   background: #4759f4;
